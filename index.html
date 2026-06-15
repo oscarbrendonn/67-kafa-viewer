@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>67 Karakter — Kafa Önizleme</title>
+<title>67 Karakter — Kafa Önizleme (4 tasarım)</title>
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 <style>
   :root { color-scheme: dark; }
@@ -18,7 +18,7 @@
   header p { margin: 6px 0 0; color: #9aa3b5; font-size: 13px; }
   .grid {
     display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
-    max-width: 1200px; margin: 14px auto; padding: 0 16px 28px;
+    max-width: 1280px; margin: 14px auto; padding: 0 16px 28px;
   }
   @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
   .card {
@@ -30,7 +30,7 @@
     border-bottom: 1px solid #1d2431; display: flex; justify-content: space-between; align-items: center;
   }
   .tag { font-size: 11px; color: #8b94a7; font-weight: 500; }
-  model-viewer { width: 100%; height: 64vh; min-height: 380px; background: #0e1219; --poster-color: transparent; }
+  model-viewer { width: 100%; height: 56vh; min-height: 360px; background: #0e1219; --poster-color: transparent; }
   .foot { text-align: center; color: #6b7488; font-size: 12px; padding: 0 16px 30px; }
   .pill { display:inline-block; background:#1a2233; border:1px solid #2a3450; color:#aeb8cc;
           border-radius:999px; padding:3px 10px; font-size:11px; margin:0 3px; }
@@ -39,24 +39,36 @@
 <body>
   <header>
     <h1>67 Karakter — Kafa Önizleme</h1>
-    <p>Mouse ile döndür · scroll ile yakınlaş · iki tasarımı karşılaştır</p>
+    <p>4 tasarım · mouse ile döndür · scroll ile yakınlaş · karşılaştır</p>
   </header>
   <div class="grid">
     <div class="card">
-      <h2>C1 <span class="tag">sadece ön · HQ portre</span></h2>
+      <h2>C1 <span class="tag">HQ portre · sadece ön · YENİ</span></h2>
       <model-viewer src="C1.glb" alt="C1" camera-controls touch-action="pan-y"
         auto-rotate auto-rotate-delay="1500" rotation-per-second="18deg"
         environment-image="neutral" exposure="1.05" shadow-intensity="0.6"
-        camera-orbit="0deg 82deg 1.1m" min-camera-orbit="auto 0deg auto"
-        max-camera-orbit="auto 180deg auto" interaction-prompt="none"></model-viewer>
+        camera-orbit="0deg 82deg 1.1m" interaction-prompt="none"></model-viewer>
     </div>
     <div class="card">
-      <h2>C2 <span class="tag">ön + arka</span></h2>
+      <h2>C2 <span class="tag">HQ portre · ön+arka · YENİ</span></h2>
       <model-viewer src="C2.glb" alt="C2" camera-controls touch-action="pan-y"
         auto-rotate auto-rotate-delay="1500" rotation-per-second="18deg"
         environment-image="neutral" exposure="1.05" shadow-intensity="0.6"
-        camera-orbit="0deg 82deg 1.1m" min-camera-orbit="auto 0deg auto"
-        max-camera-orbit="auto 180deg auto" interaction-prompt="none"></model-viewer>
+        camera-orbit="0deg 82deg 1.1m" interaction-prompt="none"></model-viewer>
+    </div>
+    <div class="card">
+      <h2>KAFA A <span class="tag">ön + yan füzyon</span></h2>
+      <model-viewer src="A.glb" alt="Kafa A" camera-controls touch-action="pan-y"
+        auto-rotate auto-rotate-delay="1500" rotation-per-second="18deg"
+        environment-image="neutral" exposure="1.05" shadow-intensity="0.6"
+        camera-orbit="0deg 82deg 1.1m" interaction-prompt="none"></model-viewer>
+    </div>
+    <div class="card">
+      <h2>KAFA B <span class="tag">sadece ön</span></h2>
+      <model-viewer src="B.glb" alt="Kafa B" camera-controls touch-action="pan-y"
+        auto-rotate auto-rotate-delay="1500" rotation-per-second="18deg"
+        environment-image="neutral" exposure="1.05" shadow-intensity="0.6"
+        camera-orbit="0deg 82deg 1.1m" interaction-prompt="none"></model-viewer>
     </div>
   </div>
   <div class="foot">
